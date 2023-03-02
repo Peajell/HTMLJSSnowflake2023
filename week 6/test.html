@@ -1,0 +1,39 @@
+<html>
+    <script>
+        var myname = "jordan";
+        var myButton = document.querySelector("button")
+        //dss event listener using JavaScritp
+        myButton.addEventListener("click", dataPrompt);
+    
+        function dataPrompt() {
+        //Using concatenation
+        //alert("Mynames is"+ name);
+        //Using strings literals
+        var yourName = prompt("Please enter your name.","Enter name here:");
+        //using concatenation
+        alert ("my name is" + myname);
+        //alert ("Your name is" = name)
+        //using string literals
+        alert (`Your name is ${yourName}`);
+        }
+        
+    
+        
+    var yourLastname = prompt("please tell me your last name.", "Enter last name here.");
+    alert(`Nice to meet you ${yourName} ${yourlastName}.`);
+    var firstNumber = prompt("Enter the first number", "First Number");
+    var secondNumber = prompt("Enter the second number", "Second Number")
+    var result = Number(firstNumber) + Number (secondNumber);
+    alert(`The is the ${result}.`);
+    console.log (`your name is ${yourname}`)
+    console.log (`Nice to meet you ${yourname} ${yourLastname}.`);
+    console.log (`The result is ${result}.`);
+    console.log (`your name is ${yourname}./nNice to meet  you ${yourName}${yourlastName}.\nthe result is ${result}.`);
+    var body = document.queryselector(`body`);
+    var p = document.createElement(`p`);
+    p.innerText = `Your name is ${yourName}.\nNice to meet you ${yourName}${yourlastname}.\The result is ${result}.`;
+    body.appendChild(p);
+    
+    </script>
+
+</html>
